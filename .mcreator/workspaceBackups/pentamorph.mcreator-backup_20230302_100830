@@ -91,7 +91,15 @@
       "locked_code": false,
       "registry_name": "dummy_test",
       "metadata": {
-        "dependencies": []
+        "files": [
+          "src/main/java/net/mcreator/pentamorph/procedures/DummyTestProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     },
     {
