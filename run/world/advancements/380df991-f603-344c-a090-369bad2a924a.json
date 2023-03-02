@@ -1,0 +1,9 @@
+{
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:snowy_beach": "2023-03-02 14:26:26 -0500"
+    },
+    "done": false
+  },
+  "DataVersion": 3120
+}

@@ -25,17 +25,20 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider.Context;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.AbstractClientPlayer;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.monster.Slime;
+import com.mojang.blaze3d.vertex.PoseStack;
+import net.minecraft.client.renderer.MultiBufferSource;
+import net.minecraftforge.api.distmarker.Dist;
 
 
-
-
-@Mod.EventBusSubscriber
+@Mod.EventBusSubscriber(value=Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class QuintusTokenRightclickedOnBlockProcedure {
 
 	//
 	@SubscribeEvent
-	public static void onPlayerTick(RenderPlayerEvent.Pre event, Entity entity){
-		renderShift(event, entity);
+	public static void onPlayerTick(RenderPlayerEvent.Pre event){
+		renderShift(event);
 	}
 	/*
 	//initial execution
@@ -52,11 +55,13 @@ public class QuintusTokenRightclickedOnBlockProcedure {
 */
 	//render change
 	@SubscribeEvent
-	public static void renderShift(RenderPlayerEvent.Pre event, Entity entity){
+	public static void renderShift(RenderPlayerEvent.Pre event){
+		Entity entity = event.getEntity();
 		if (((entity.getCapability(PentamorphModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PentamorphModVariables.PlayerVariables())).characterType).equals("Juror")) {
-			Player player = event.getEntity();
+			//Player player = event.getEntity();
 			event.setCanceled(true);
 			EntityRendererProvider.Context context = new EntityRendererProvider.Context(
+				
 				Minecraft.getInstance().getEntityRenderDispatcher(),
           		Minecraft.getInstance().getItemRenderer(),
        	  		Minecraft.getInstance().getBlockRenderer(),
@@ -67,7 +72,12 @@ public class QuintusTokenRightclickedOnBlockProcedure {
         	);
 			event.getPoseStack().pushPose();
 			//custom renderer
+			
+			
+			//Minecraft.getInstance().getEntityRenderDispatcher().getRenderer(ent).render();
 			event.getPoseStack().popPose();
 		}
 	}
 }
+
+
