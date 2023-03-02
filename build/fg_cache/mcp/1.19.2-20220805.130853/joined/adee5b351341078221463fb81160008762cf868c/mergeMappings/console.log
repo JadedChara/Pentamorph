@@ -1,0 +1,16 @@
+JVM:         C:\Users\Famil\OneDrive\Desktop\MCreator.2023.1.Windows.64bit\MCreator20231\jdk\bin\java.exe
+JVM Args:    
+Run Args:    "--task", "MERGE_MAPPING", "--left", "config/joined.tsrg", "--right", "C:\Users\Famil\MCreatorWorkspaces\pentamorph\build\fg_cache\mcp\1.19.2-20220805.130853\joined\adee5b351341078221463fb81160008762cf868c\downloadClientMappings\client_mappings.txt", "--right-names", "right,left", "--classes", "--output", "C:\Users\Famil\MCreatorWorkspaces\pentamorph\build\fg_cache\mcp\1.19.2-20220805.130853\joined\adee5b351341078221463fb81160008762cf868c\mergeMappings\output.jar"
+Classpath:   C:\Users\Famil\.mcreator\gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\installertools\1.2.0\installertools-1.2.0-fatjar.jar
+Working Dir: C:\Users\Famil\MCreatorWorkspaces\pentamorph\build\fg_cache\mcp\1.19.2-20220805.130853\joined\adee5b351341078221463fb81160008762cf868c\mergeMappings
+Main Class:  net.minecraftforge.installertools.ConsoleTool
+Task: MERGE_MAPPING
+Left:    config\joined.tsrg
+         null
+Right:   C:\Users\Famil\MCreatorWorkspaces\pentamorph\build\fg_cache\mcp\1.19.2-20220805.130853\joined\adee5b351341078221463fb81160008762cf868c\downloadClientMappings\client_mappings.txt
+         right,left
+Classes: true
+Fields:  false
+Methods: false
+Params:  false
+Output:  C:\Users\Famil\MCreatorWorkspaces\pentamorph\build\fg_cache\mcp\1.19.2-20220805.130853\joined\adee5b351341078221463fb81160008762cf868c\mergeMappings\output.jar

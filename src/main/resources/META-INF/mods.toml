@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[43,)"
+license="Creative Commons Attribution-NonCommercial 3.0"
+
+[[mods]]
+modId="pentamorph"
+version="0.0.2"
+displayName="Pentamorph"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+displayURL="https://www.nightstrikethereaper.wixsite.com"
+authors="Nightstrike"
+
+[[dependencies.pentamorph]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.2]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+[[dependencies.pentamorph]]
+    modId="geckolib"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+

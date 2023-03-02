@@ -1,0 +1,13 @@
+JVM:         C:\Users\Famil\OneDrive\Desktop\MCreator.2023.1.Windows.64bit\MCreator20231\jdk\bin\java.exe
+JVM Args:    
+Run Args:    "--task", "bundler_extract", "--input", "C:\Users\Famil\MCreatorWorkspaces\pentamorph\build\fg_cache\mcp\1.19.2-20220805.130853\joined\adee5b351341078221463fb81160008762cf868c\downloadServer\server.jar", "--output", "C:\Users\Famil\MCreatorWorkspaces\pentamorph\build\fg_cache\mcp\1.19.2-20220805.130853\joined\adee5b351341078221463fb81160008762cf868c\extractServer\output.jar", "--jar-only"
+Classpath:   C:\Users\Famil\.mcreator\gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\installertools\1.3.0\installertools-1.3.0-fatjar.jar
+Working Dir: C:\Users\Famil\MCreatorWorkspaces\pentamorph\build\fg_cache\mcp\1.19.2-20220805.130853\joined\adee5b351341078221463fb81160008762cf868c\extractServer
+Main Class:  net.minecraftforge.installertools.ConsoleTool
+Task: BUNDLER_EXTRACT
+Input:   C:\Users\Famil\MCreatorWorkspaces\pentamorph\build\fg_cache\mcp\1.19.2-20220805.130853\joined\adee5b351341078221463fb81160008762cf868c\downloadServer\server.jar
+Output:  C:\Users\Famil\MCreatorWorkspaces\pentamorph\build\fg_cache\mcp\1.19.2-20220805.130853\joined\adee5b351341078221463fb81160008762cf868c\extractServer\output.jar
+All:     false
+JarOnly: true
+Libs:    false
+Extracted: versions/1.19.2/server-1.19.2.jar

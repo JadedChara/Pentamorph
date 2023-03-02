@@ -1,0 +1,11 @@
+{
+  "_fv": 39,
+  "_type": "tab",
+  "definition": {
+    "name": "Pentamorph",
+    "icon": {
+      "value": "CUSTOM:QuintusToken"
+    },
+    "showSearch": false
+  }
+}

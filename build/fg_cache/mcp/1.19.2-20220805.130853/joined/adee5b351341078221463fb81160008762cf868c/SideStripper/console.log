@@ -1,0 +1,9 @@
+JVM:         C:\Users\Famil\OneDrive\Desktop\MCreator.2023.1.Windows.64bit\MCreator20231\jdk\bin\java.exe
+JVM Args:    
+Run Args:    "--strip", "--input", "C:\Users\Famil\MCreatorWorkspaces\pentamorph\build\fg_cache\mcp\1.19.2-20220805.130853\joined\adee5b351341078221463fb81160008762cf868c\AccessTransformer\output.jar", "--output", "C:\Users\Famil\MCreatorWorkspaces\pentamorph\build\fg_cache\mcp\1.19.2-20220805.130853\joined\adee5b351341078221463fb81160008762cf868c\SideStripper\output.jar", "--data", "C:\Users\Famil\MCreatorWorkspaces\pentamorph\build\fg_cache\mcp\1.19.2-20220805.130853\joined\adee5b351341078221463fb81160008762cf868c\SideStripper\string_data.sas"
+Classpath:   C:\Users\Famil\.mcreator\gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\mergetool\1.1.5\mergetool-1.1.5-fatjar.jar
+Working Dir: C:\Users\Famil\MCreatorWorkspaces\pentamorph\build\fg_cache\mcp\1.19.2-20220805.130853\joined\adee5b351341078221463fb81160008762cf868c\SideStripper
+Main Class:  net.minecraftforge.mergetool.ConsoleMerger
+Input:  C:\Users\Famil\MCreatorWorkspaces\pentamorph\build\fg_cache\mcp\1.19.2-20220805.130853\joined\adee5b351341078221463fb81160008762cf868c\AccessTransformer\output.jar
+Output: C:\Users\Famil\MCreatorWorkspaces\pentamorph\build\fg_cache\mcp\1.19.2-20220805.130853\joined\adee5b351341078221463fb81160008762cf868c\SideStripper\output.jar
+Data:   C:\Users\Famil\MCreatorWorkspaces\pentamorph\build\fg_cache\mcp\1.19.2-20220805.130853\joined\adee5b351341078221463fb81160008762cf868c\SideStripper\string_data.sas
