@@ -76,7 +76,7 @@
       "name": "QuintusTokenRightclickedOnBlock",
       "type": "procedure",
       "sortid": 3,
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "quintus_token_rightclicked_on_block",
       "metadata": {
@@ -123,6 +123,12 @@
       "type": "string",
       "scope": "player_persistent",
       "value": "\"player\""
+    },
+    {
+      "name": "formFinal",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "true"
     }
   ],
   "sound_elements": [],

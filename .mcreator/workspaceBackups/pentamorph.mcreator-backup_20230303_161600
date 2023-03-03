@@ -98,6 +98,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -123,6 +127,12 @@
       "type": "string",
       "scope": "player_persistent",
       "value": "\"player\""
+    },
+    {
+      "name": "formFinal",
+      "type": "logic",
+      "scope": "map",
+      "value": "true"
     }
   ],
   "sound_elements": [],

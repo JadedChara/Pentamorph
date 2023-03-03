@@ -67,6 +67,7 @@ public class PentamorphModVariables {
 			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			clone.characterType = original.characterType;
+			clone.formFinal = original.formFinal;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -104,6 +105,7 @@ public class PentamorphModVariables {
 
 	public static class PlayerVariables {
 		public String characterType = "\"player\"";
+		public boolean formFinal = true;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -113,12 +115,14 @@ public class PentamorphModVariables {
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putString("characterType", characterType);
+			nbt.putBoolean("formFinal", formFinal);
 			return nbt;
 		}
 
 		public void readNBT(Tag Tag) {
 			CompoundTag nbt = (CompoundTag) Tag;
 			characterType = nbt.getString("characterType");
+			formFinal = nbt.getBoolean("formFinal");
 		}
 	}
 
@@ -144,6 +148,7 @@ public class PentamorphModVariables {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 					variables.characterType = message.data.characterType;
+					variables.formFinal = message.data.formFinal;
 				}
 			});
 			context.setPacketHandled(true);

@@ -30,6 +30,9 @@ import net.minecraft.world.entity.monster.Slime;
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.RenderLivingEvent;
+//import net.minecraftforge.client.event.RenderLivingEvent.Pre;
+
 
 
 @Mod.EventBusSubscriber(value=Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.FORGE)
@@ -57,25 +60,31 @@ public class QuintusTokenRightclickedOnBlockProcedure {
 	@SubscribeEvent
 	public static void renderShift(RenderPlayerEvent.Pre event){
 		Entity entity = event.getEntity();
-		if (((entity.getCapability(PentamorphModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PentamorphModVariables.PlayerVariables())).characterType).equals("Juror")) {
-			//Player player = event.getEntity();
-			event.setCanceled(true);
-			EntityRendererProvider.Context context = new EntityRendererProvider.Context(
+		if((entity.getCapability(PentamorphModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PentamorphModVariables.PlayerVariables())).formFinal == false){
+			//test condition
+			if (((entity.getCapability(PentamorphModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new PentamorphModVariables.PlayerVariables())).characterType).equals("Juror")) {
+				//Player player = event.getEntity();
+				event.setCanceled(true);
+				EntityRendererProvider.Context context = new EntityRendererProvider.Context(				
+					Minecraft.getInstance().getEntityRenderDispatcher(),
+    	      		Minecraft.getInstance().getItemRenderer(),
+       		  		Minecraft.getInstance().getBlockRenderer(),
+        			Minecraft.getInstance().gameRenderer.itemInHandRenderer,
+        			Minecraft.getInstance().getResourceManager(),
+	      		  	Minecraft.getInstance().getEntityModels(),
+    	    		Minecraft.getInstance().font
+        		);
+				event.getPoseStack().pushPose();
+				//custom renderer
 				
-				Minecraft.getInstance().getEntityRenderDispatcher(),
-          		Minecraft.getInstance().getItemRenderer(),
-       	  		Minecraft.getInstance().getBlockRenderer(),
-        		Minecraft.getInstance().gameRenderer.itemInHandRenderer,
-        		Minecraft.getInstance().getResourceManager(),
-      		  	Minecraft.getInstance().getEntityModels(),
-        		Minecraft.getInstance().font
-        	);
-			event.getPoseStack().pushPose();
-			//custom renderer
+				
+				//Minecraft.getInstance().getEntityRenderDispatcher().getRenderer(ent).render();
+				event.getPoseStack().popPose();
+			}
+			//conditional2
+			//conditional3
 			
-			
-			//Minecraft.getInstance().getEntityRenderDispatcher().getRenderer(ent).render();
-			event.getPoseStack().popPose();
+			//
 		}
 	}
 }
