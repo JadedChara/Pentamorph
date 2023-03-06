@@ -21,7 +21,6 @@ public class QuintessonJurorRenderer extends GeoEntityRenderer<QuintessonJurorEn
 	}
 
 	@Override
-	
 	public RenderType getRenderType(QuintessonJurorEntity entity, float partialTicks, PoseStack stack, MultiBufferSource renderTypeBuffer, VertexConsumer vertexBuilder, int packedLightIn, ResourceLocation textureLocation) {
 		return RenderType.entityTranslucent(getTextureLocation(entity));
 	}

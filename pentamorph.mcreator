@@ -115,6 +115,18 @@
           "src/main/java/net/mcreator/pentamorph/item/DummyItemItem.java"
         ]
       }
+    },
+    {
+      "name": "ToxinOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toxin_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/pentamorph/client/screens/ToxinOverlayOverlay.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -165,5 +177,5 @@
     "modElementsPackage": "net.mcreator.pentamorph",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202300108712
+  "mcreatorVersion": 202300109612
 }

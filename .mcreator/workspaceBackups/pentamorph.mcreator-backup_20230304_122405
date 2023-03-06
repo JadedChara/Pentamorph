@@ -91,14 +91,13 @@
       "locked_code": false,
       "registry_name": "dummy_test",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/pentamorph/procedures/DummyTestProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       }
@@ -128,7 +127,7 @@
     {
       "name": "formFinal",
       "type": "logic",
-      "scope": "map",
+      "scope": "player_persistent",
       "value": "true"
     }
   ],

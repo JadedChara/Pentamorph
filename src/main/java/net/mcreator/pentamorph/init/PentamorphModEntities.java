@@ -34,10 +34,12 @@ public class PentamorphModEntities {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
+			QuintessonJurorEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
+		event.put(QUINTESSON_JUROR.get(), QuintessonJurorEntity.createAttributes().build());
 	}
 }

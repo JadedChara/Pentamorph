@@ -127,7 +127,7 @@
     {
       "name": "formFinal",
       "type": "logic",
-      "scope": "map",
+      "scope": "player_persistent",
       "value": "true"
     }
   ],
