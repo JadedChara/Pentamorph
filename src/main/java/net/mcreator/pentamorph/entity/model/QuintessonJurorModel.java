@@ -14,7 +14,7 @@ public class QuintessonJurorModel extends AnimatedGeoModel<QuintessonJurorEntity
 
 	@Override
 	public ResourceLocation getModelResource(QuintessonJurorEntity entity) {
-		return new ResourceLocation("pentamorph", "geo/quintjuror");
+		return new ResourceLocation("pentamorph", "geo/quintjuror.geo.json");
 	}
 
 	@Override

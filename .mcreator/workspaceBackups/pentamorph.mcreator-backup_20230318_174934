@@ -41,7 +41,7 @@
       "type": "animatedentity",
       "sortid": 2,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "quintesson_juror",
       "metadata": {
         "files": [
@@ -76,7 +76,7 @@
       "name": "QuintusTokenRightclickedOnBlock",
       "type": "procedure",
       "sortid": 3,
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "quintus_token_rightclicked_on_block",
       "metadata": {
@@ -125,6 +125,23 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/pentamorph/client/screens/ToxinOverlayOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "Display",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display",
+      "metadata": {
+        "return_type": "entity",
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       }
     }
@@ -177,5 +194,5 @@
     "modElementsPackage": "net.mcreator.pentamorph",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202300109612
+  "mcreatorVersion": 202300110610
 }
